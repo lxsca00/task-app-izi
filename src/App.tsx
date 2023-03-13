@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Suspense} from 'react';
+import { Outlet } from 'react-router-dom';
+import '../src/styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return(
+    <Suspense>
+      {/*start: Language provider*/}
+        {/*start: Layout provider*/}
+          {/*start: Auth Init*/}
+          <Outlet/>
+          {/*end: Auth Init*/}
+        {/*end: Layout provider*/}
+      {/*end: Language provider*/}
+    </Suspense>
+  )
 }
 
-export default App;
+export {App}
