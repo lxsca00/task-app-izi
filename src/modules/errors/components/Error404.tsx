@@ -2,9 +2,9 @@ import {FC} from 'react'
 import {Link} from 'react-router-dom'
 import {toAbsoluteUrl} from '../../../helpers/AssetHelpers'
 
-const Error404: React.FC = () => {
+const Error404: FC = () => {
   return (
-    <p>Error 404 module</p>
+    <p>Error404 component works!</p>
   )
 }
 

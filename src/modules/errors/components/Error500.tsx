@@ -1,7 +1,7 @@
 import { FC } from "react"
 const Error500: FC = () => {
   return (
-    <p>Error 500 module</p>
+    <p>Error500 component works!</p>
   )
 }
 

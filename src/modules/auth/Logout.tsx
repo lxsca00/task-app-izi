@@ -1,4 +1,4 @@
 //TODO
-const Logout = () => <p>Logout component</p>
+const Logout = () => <p>Logout component works!</p>
 
 export {Logout}
