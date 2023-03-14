@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 //import '../src/styles/index.css';
-import {App} from './App';
+//import {App} from './App';
 import { AppRoutes } from './routing/AppRoutes';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/sass/style.scss'
+import './assets/sass/plugins.scss'
+import './/assets/sass/style.react.scss'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
