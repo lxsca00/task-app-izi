@@ -1,6 +1,6 @@
 import {Suspense} from 'react';
 import { Outlet } from 'react-router-dom';
-import '../src/styles/App.css';
+//import '../src/styles/App.css';
 import { MasterInit } from './partials/layout/MasterInit';
 
 const App = () => {

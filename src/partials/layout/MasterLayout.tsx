@@ -1,6 +1,6 @@
 //import { Outlet } from "react-router-dom"
 import { TestForContent } from "../../TestForContent"
-import { AsideDefault } from "./components/aside/AsideDefault"
+//import { AsideDefault } from "./components/aside/AsideDefault"
 import { Content } from "./components/Content"
 import { Footer } from "./components/Footer"
 import { HeaderWrapper } from "./components/header/HeaderWrapper"
@@ -11,7 +11,7 @@ const MasterLayout = () => {
     return(
         <PageDataProvider>
             <div className='page d-flex flex-row flex-column-fluid'>
-          <AsideDefault />
+          {/*<AsideDefault />*/}
           <div className='wrapper d-flex flex-column flex-row-fluid' id='kt_wrapper'>
             <HeaderWrapper />
 

@@ -1,20 +1,41 @@
-import { AsideDefault } from "./components/aside/AsideDefault";
-import { AsideMenu } from "./components/aside/AsideMenu";
-import { AsideMenuItem } from "./components/aside/AsideMenuItem";
-import { AsideMenuMain } from "./components/aside/AsideMenuMain";
-import { AsideMenuWithSub } from "./components/aside/AsideMenuWithSub";
-import { MasterLayout } from "./MasterLayout";
+import { useEffect, useRef } from "react";
 
-const MasterInit = () => (
-  <>
-    <p>MasterInit component works!</p>
-    <MasterLayout />
-    <AsideDefault />
-    <AsideMenu />
-    <AsideMenuItem />
-    <AsideMenuMain />
-    <AsideMenuWithSub />
-  </>
-);
+import {
+  MenuComponent,
+  DrawerComponent,
+  ScrollComponent,
+  ScrollTopComponent,
+  StickyComponent,
+  ToggleComponent,
+  SwapperComponent,
+} from "../../assets/ts/components";
+import { ThemeModeComponent } from "../../assets/ts/layout";
 
-export { MasterInit };
+import { useLayout } from "./core/LayoutProvider";
+
+export function MasterInit() {
+  const { config } = useLayout();
+  const isFirstRun = useRef(true);
+  const pluginsInitialization = () => {
+    isFirstRun.current = false;
+    ThemeModeComponent.init();
+    setTimeout(() => {
+      ToggleComponent.bootstrap();
+      ScrollTopComponent.bootstrap();
+      DrawerComponent.bootstrap();
+      StickyComponent.bootstrap();
+      MenuComponent.bootstrap();
+      ScrollComponent.bootstrap();
+      SwapperComponent.bootstrap();
+    }, 500);
+  };
+
+  useEffect(() => {
+    if (isFirstRun.current) {
+      isFirstRun.current = false;
+      pluginsInitialization();
+    }
+  }, [config]);
+
+  return <></>;
+}
