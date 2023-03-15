@@ -1,18 +1,18 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
-import {useIntl} from 'react-intl'
+//import {useIntl} from 'react-intl'
 import { AsideMenuItemWithSub } from './AsideMenuWithSub'
 import {AsideMenuItem} from './AsideMenuItem'
 
 export function AsideMenuMain() {
-  const intl = useIntl()
+  //const intl = useIntl()
 
   return (
     <>
       <AsideMenuItem
         to='/dashboard'
         icon='/media/icons/duotune/art/art002.svg'
-        title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
+        title='Dashboard'
         fontIcon='bi-app-indicator'
       />
       <AsideMenuItemWithSub

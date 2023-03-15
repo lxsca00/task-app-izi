@@ -23,7 +23,7 @@ const AsideDefault: FC = () => {
   return (
     <div
       id='kt_aside'
-      className={clsx('aside', classes.aside.join(' '))}
+      className={clsx('aside ', classes.aside.join(' '))}
       data-kt-drawer='true'
       data-kt-drawer-name='aside'
       data-kt-drawer-activate='{default: true, lg: false}'
@@ -78,8 +78,8 @@ const AsideDefault: FC = () => {
       {/* end::Brand */}
 
       {/* begin::Aside menu */}
-      <div className='aside-menu flex-column-fluid'>
-        <AsideMenu asideMenuCSSClasses={classes.asideMenu} />
+      <div className='aside-menu aside-dark flex-column-fluid'>
+        <AsideMenu />
       </div>
       {/* end::Aside menu */}
 
