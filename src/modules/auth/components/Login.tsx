@@ -70,7 +70,7 @@ const Login = () => {
       </div>
       {/* begin::Heading */}
 
-      {formik.status ? (
+      {/*formik.status ? (
         <div className='mb-lg-15 alert alert-danger'>
           <div className='alert-text font-weight-bold'>{formik.status}</div>
         </div>
@@ -81,7 +81,7 @@ const Login = () => {
             continue.
           </div>
         </div>
-      )}
+      )*/}
 
       {/* begin::Form group */}
       <div className='fv-row mb-10'>
@@ -178,7 +178,7 @@ const Login = () => {
             src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
             className='h-20px me-3'
           />
-          Continue with Google
+          Continue with something else
         </a>
         {/* end::Google link */}
 

@@ -1,5 +1,5 @@
-//import { Outlet } from "react-router-dom"
-import { TestForContent } from "../../TestForContent";
+import { Outlet } from "react-router-dom";
+//import { TestForContent } from "../../TestForContent";
 import { AsideDefault } from "./components/aside/AsideDefault";
 import { Content } from "./components/Content";
 import { Footer } from "./components/Footer";
@@ -24,8 +24,7 @@ const MasterLayout = () => {
           >
             <div className="post d-flex flex-column-fluid" id="kt_post">
               <Content>
-                {/*<Outlet />*/}
-                <TestForContent />
+                <Outlet />
               </Content>
             </div>
           </div>

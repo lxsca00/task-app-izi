@@ -1,5 +1,11 @@
-import {FC} from 'react'
+import { FC } from "react";
+import { PageHeader } from "../../partials/content/page-header/PageHeader";
 
-const UserManagement: FC = () => <p>UserManagement component works!</p>
+const UserManagement: FC = () => (
+  <>
+    <PageHeader />
+    <p>UserManagement component works!</p>
+  </>
+);
 
-export {UserManagement}
+export { UserManagement };

@@ -3,14 +3,14 @@ import React, {FC} from 'react'
 //import { KTSVG } from '../../../../helpers/KTSVG'
 import { toAbsoluteUrl } from '../../../../helpers/AssetHelpers'
 import { HeaderUserMenu } from './header-menus/HeaderUserMenu' 
-import { useLayout } from '../../core/LayoutProvider'
+//import { useLayout } from '../../core/LayoutProvider'
 
 const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
   //toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
   toolbarUserAvatarHeightClass = 'symbol-30px symbol-md-40px'
 
 const Topbar: FC = () => {
-  const {config} = useLayout()
+  //const {config} = useLayout()
 
   return (
     <div className='d-flex align-items-stretch flex-shrink-0'>

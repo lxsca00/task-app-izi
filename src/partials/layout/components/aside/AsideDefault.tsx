@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {FC, useRef} from 'react'
 import {Link} from 'react-router-dom'
-import clsx from 'clsx'
 import { useLayout } from '../../core/LayoutProvider'
 import { toAbsoluteUrl } from '../../../../helpers/AssetHelpers'
 import { KTSVG } from '../../../../helpers/KTSVG'
@@ -23,7 +22,7 @@ const AsideDefault: FC = () => {
   return (
     <div
       id='kt_aside'
-      className={clsx('aside ', classes.aside.join(' '))}
+      className="aside aside-dark"
       data-kt-drawer='true'
       data-kt-drawer-name='aside'
       data-kt-drawer-activate='{default: true, lg: false}'

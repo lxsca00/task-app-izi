@@ -1,5 +1,11 @@
-import {FC} from 'react'
+import { FC } from "react";
+import { PageHeader } from "../../partials/content/page-header/PageHeader";
 
-const Mailbox: FC = () => <p>Mailbox component!</p>
+const Mailbox: FC = () => (
+  <>
+    <PageHeader />
+    <p>Mailbox component!</p>
+  </>
+);
 
-export {Mailbox}
+export { Mailbox };
