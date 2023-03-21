@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useIntl } from "react-intl";
 import { Outlet, Route, Routes } from "react-router-dom";
-import { PageHeader } from "../../partials/content/page-header/PageHeader";
+import { PageHeader } from "../../partials/components/page-header/PageHeader";
 import { PageTitle } from "../../partials/layout/core/PageData";
 import { DashboardBusiness } from "./business/DashboardBusiness";
 import { DashboardGGEE } from "./ggee/DashboardGGEE";

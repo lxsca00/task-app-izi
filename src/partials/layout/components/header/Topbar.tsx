@@ -13,19 +13,12 @@ const Topbar: FC = () => {
   //const {config} = useLayout()
 
   return (
-    <div className='d-flex align-items-stretch flex-shrink-0'>
+    <div className='d-flex'>
       {/* Search */}
       {/*<div className={clsx('d-flex align-items-stretch', toolbarButtonMarginClass)}>
         <Search />
       </div>*/}
       {/* end::Search */}
-      {/* begin::Theme mode */}
-      {/*<div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-        <ThemeModeSwitcher
-          toggleBtnClass={clsx('btn-active-light-primary btn-custom', toolbarButtonHeightClass)}
-        />
-    </div>*/}
-      {/* end::Theme mode */}
 
       {/* begin::User */}
       <div
