@@ -17,7 +17,6 @@ const MasterLayout = () => {
           id="kt_wrapper"
         >
           <HeaderWrapper />
-
           <div
             id="kt_content"
             className="content d-flex flex-column flex-column-fluid"

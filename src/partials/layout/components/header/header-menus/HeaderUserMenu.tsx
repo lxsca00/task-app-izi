@@ -2,7 +2,6 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../../../../modules/auth/core/Auth";
-import { Languages } from "./Languages";
 import { toAbsoluteUrl } from "../../../../../helpers/AssetHelpers";
 
 const HeaderUserMenu: FC = () => {
@@ -36,10 +35,6 @@ const HeaderUserMenu: FC = () => {
           My Profile
         </Link>
       </div>
-
-      <div className="separator my-2"></div>
-
-      <Languages />
 
       <div className="menu-item px-5">
         <a onClick={logout} className="menu-link px-5">

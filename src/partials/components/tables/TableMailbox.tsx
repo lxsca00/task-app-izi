@@ -65,17 +65,6 @@ const TableMailbox: React.FC<Props> = ({className}) => {
             {/* begin::Table head */}
             <thead>
               <tr className='fw-bold text-muted'>
-                <th className='w-25px'>
-                  <div className='form-check form-check-sm form-check-custom form-check-solid'>
-                    <input
-                      className='form-check-input'
-                      type='checkbox'
-                      value='1'
-                      data-kt-check='true'
-                      data-kt-check-target='.widget-13-check'
-                    />
-                  </div>
-                </th>
                 <th className='min-w-150px'>Cod. Comercio</th>
                 <th className='min-w-140px'>Country</th>
                 <th className='min-w-120px'>Date</th>
@@ -89,11 +78,7 @@ const TableMailbox: React.FC<Props> = ({className}) => {
             {/* begin::Table body */}
             <tbody>
               <tr>
-                <td>
-                  <div className='form-check form-check-sm form-check-custom form-check-solid'>
-                    <input className='form-check-input widget-13-check' type='checkbox' value='1' />
-                  </div>
-                </td>
+
                 <td>
                   <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
                     56037-XDER
@@ -143,11 +128,6 @@ const TableMailbox: React.FC<Props> = ({className}) => {
               </tr>
               <tr>
                 <td>
-                  <div className='form-check form-check-sm form-check-custom form-check-solid'>
-                    <input className='form-check-input widget-13-check' type='checkbox' value='1' />
-                  </div>
-                </td>
-                <td>
                   <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
                     05822-FXSP
                   </a>
@@ -196,11 +176,6 @@ const TableMailbox: React.FC<Props> = ({className}) => {
               </tr>
               <tr>
                 <td>
-                  <div className='form-check form-check-sm form-check-custom form-check-solid'>
-                    <input className='form-check-input widget-13-check' type='checkbox' value='1' />
-                  </div>
-                </td>
-                <td>
                   <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
                     4472-QREX
                   </a>
@@ -247,11 +222,6 @@ const TableMailbox: React.FC<Props> = ({className}) => {
               </tr>
               <tr>
                 <td>
-                  <div className='form-check form-check-sm form-check-custom form-check-solid'>
-                    <input className='form-check-input widget-13-check' type='checkbox' value='1' />
-                  </div>
-                </td>
-                <td>
                   <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
                     00347-BCLQ
                   </a>
@@ -297,11 +267,6 @@ const TableMailbox: React.FC<Props> = ({className}) => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  <div className='form-check form-check-sm form-check-custom form-check-solid'>
-                    <input className='form-check-input widget-13-check' type='checkbox' value='1' />
-                  </div>
-                </td>
                 <td>
                   <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
                     59486-XDER

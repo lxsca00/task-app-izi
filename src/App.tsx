@@ -1,21 +1,20 @@
-import {Suspense} from 'react';
-import { Outlet } from 'react-router-dom';
-//import '../src/styles/App.css';
-import { MasterInit } from './partials/layout/MasterInit';
+import { Suspense } from "react";
+import { Outlet } from "react-router-dom";
+import { LayoutProvider } from "./partials/layout/core/LayoutProvider";
+import { MasterInit } from "./partials/layout/MasterInit";
 
 const App = () => {
-  return(
+  return (
     <Suspense>
-      {/*start: Language provider*/}
-        {/*start: Layout provider*/}
-          {/*start: Auth Init*/}
-          <Outlet/>
-          <MasterInit/>
-          {/*end: Auth Init*/}
-        {/*end: Layout provider*/}
-      {/*end: Language provider*/}
-    </Suspense>
-  )
-}
+      <LayoutProvider>
+        {/*start: Auth Init*/}
+        <Outlet />
+        <MasterInit />
+      </LayoutProvider>
 
-export {App}
+      {/*end: Auth Init*/}
+    </Suspense>
+  );
+};
+
+export { App };
