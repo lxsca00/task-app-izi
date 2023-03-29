@@ -1,12 +1,11 @@
 const UsersTableHead = () => (
-    <thead>
-      <tr className="fw-bold text-muted">
-        <th className="min-w-120px text-center">Código</th>
-        <th className="min-w-150px text-center">RUC</th>
-        <th className="min-w-120px text-center">Actividades</th>
-
-      </tr>
-    </thead>
-  );
-  export { UsersTableHead };
-  
+  <thead>
+    <tr className="fw-bold text-muted">
+      <th className="min-w-120px text-center">Nombre</th>
+      <th className="min-w-120px text-center">User</th>
+      <th className="min-w-150px text-center">Email</th>
+      <th className="min-w-120px text-center">Roles</th>
+    </tr>
+  </thead>
+);
+export { UsersTableHead };

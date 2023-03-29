@@ -3,7 +3,6 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { toAbsoluteUrl } from "../../helpers/AssetHelpers";
 import { ForgotPassword } from "./components/ForgotPassword";
 import { Login } from "./components/Login";
-import { Register } from "./components/Register";
 
 const AuthLayout = () => {
   useEffect(() => {
@@ -12,22 +11,16 @@ const AuthLayout = () => {
       document.body.classList.remove("bg-body");
     };
   }, []);
+
   return (
-    <div
-      className="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
-      /*style={{
-        backgroundImage: `url(${toAbsoluteUrl(
-          "/media/illustrations/sketchy-1/14.png"
-        )})`,
-      }}*/
-    >
+    <div className="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed">
       {/* begin::Content */}
       <div className="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
         {/* begin::Logo */}
-        <a href="/" className="mb-12">
+        <a href="https://delfosti.com/" className="mb-12">
           <img
             alt="Logo"
-            src={toAbsoluteUrl("logo.png")}
+            src={toAbsoluteUrl("media/logos/logo.png")}
             className="h-45px"
           />
         </a>
@@ -42,8 +35,11 @@ const AuthLayout = () => {
       {/* begin::Footer */}
       <div className="d-flex flex-center flex-column-auto p-10">
         <div className="d-flex align-items-center fw-bold fs-6">
-          <a href="/" className="text-muted text-hover-primary px-2">
-            Este es un footer
+          <span className="text-muted fw-bold me-2">
+            {new Date().getFullYear()} &copy;
+          </span>
+          <a href="https://delfosti.com/" className="text-gray-800 text-hover-primary">
+            Delfosti
           </a>
         </div>
       </div>
@@ -56,7 +52,6 @@ const AuthPage = () => (
   <Routes>
     <Route element={<AuthLayout />}>
       <Route path="login" element={<Login />} />
-      <Route path="register" element={<Register />} />
       <Route path="forgot-password" element={<ForgotPassword />} />
       <Route index element={<Login />} />
     </Route>
