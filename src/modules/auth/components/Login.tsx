@@ -32,7 +32,6 @@ const Login = () => {
         const { data: user } = await getUserByToken(auth.api_token);
         setCurrentUser(user);
       } catch (error) {
-        console.log("Ta mal")
         saveAuth(undefined);
         setStatus("Ta mal");
         setSubmitting(false);
