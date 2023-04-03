@@ -49,10 +49,6 @@
 			color: #494b74;
 		}
 
-		// Separator
-		.separator {
-			border-bottom-color: #282a3d;
-		}
 
 		// Custom button
 		.btn-custom {
@@ -75,11 +71,6 @@
 				}
 			}
 		}
-	}
-
-	// Light theme
-	&.aside-light {
-		background-color: var(--kt-aside-bg-color);
 	}
 }
 

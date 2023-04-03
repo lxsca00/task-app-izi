@@ -4,11 +4,12 @@ import * as Yup from "yup";
 import { useAuth } from "../core/Auth";
 import { getUserByToken, login } from "../core/_request";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
-    .email("Formato de email incorrecto")
-    .required("Email es requerido"),
+    .email("Formato de correo electrónico incorrecto")
+    .required("Correo electrónico es requerido"),
   password: Yup.string().required("Contraseña es requerida"),
 });
 
@@ -51,7 +52,7 @@ const Login = () => {
         <h1 className="text-dark mb-3">Iniciar sesión</h1>
       </div>
       <div className="fv-row mb-10">
-        <label className="form-label fs-6 fw-bolder text-dark">Email</label>
+        <label className="form-label fs-6 fw-bolder text-dark">Correo electrónico</label>
         <input
           {...formik.getFieldProps("email")}
           className={clsx(
@@ -115,6 +116,15 @@ const Login = () => {
           </span>
         )}
       </button>
+      <div className="text-center mt-4">
+        <Link
+        to="/auth/forgot-password"
+        className="link-primary fs-6 fw-bolder "
+      >
+        ¿Olvidaste tu contraseña?
+      </Link>
+      </div>
+      
     </form>
   );
 };

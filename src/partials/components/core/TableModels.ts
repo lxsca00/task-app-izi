@@ -1,3 +1,4 @@
+/*Ignore dis */
 export interface ITicket {
     code: number,
     ruc: number,

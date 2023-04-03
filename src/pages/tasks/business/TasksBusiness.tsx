@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { ITicket } from "../../../partials/components/core/TableModels";
 import { Table } from "../../../partials/components/tables/Table";
 import { TaskTableHead } from "../../../partials/components/tables/table-head/TasksTableHead";
@@ -29,26 +28,41 @@ const tickets: Array<ITicket> = [
   },
 ];
 
-const TasksBusiness: FC = () => (
+const TasksBusiness = (): JSX.Element => (
   <>
-    <Table name="Masivo" className="mb-5 mb-xl-8">
+    <button type="submit" onClick={() => console.log("Excel to JSON button")}>
+      Excel a JSON
+    </button>
+    {/*<Table name="Masivo" className="mb-5 mb-xl-8">
       <TaskTableHead />
       <tbody>
-        {tickets.map((ticket) => (
-          <TableRow
-            code={ticket.code}
-            ruc={ticket.ruc}
-            activities={ticket.activities}
-            enterDate={ticket.enterDate}
-            modifyDate={ticket.modifyDate}
-            intState={ticket.intState}
-            lifecycle={ticket.lifecycle}
-            state={ticket.state}
-            owner={ticket.owner}
-          />
-        ))}
+        {tickets.map(
+          ({
+            code,
+            ruc,
+            activities,
+            enterDate,
+            modifyDate,
+            intState,
+            lifecycle,
+            state,
+            owner,
+          }) => (
+            <TableRow
+              code={code}
+              ruc={ruc}
+              activities={activities}
+              enterDate={enterDate}
+              modifyDate={modifyDate}
+              intState={intState}
+              lifecycle={lifecycle}
+              state={state}
+              owner={owner}
+            />
+          )
+        )}
       </tbody>
-    </Table>
+    </Table> */}
   </>
 );
 

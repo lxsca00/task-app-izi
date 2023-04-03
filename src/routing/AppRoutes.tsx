@@ -29,7 +29,8 @@ const AppRoutes = () => {
               <Route path="*" element={<Navigate to="/auth" />} />
             </>
           )}
-
+          <Route index path="auth/*" element={<AuthPage/>}/>
+          <Route path="app/*" element={<PrivateRoutes/>}/>
           {/*TODO: Private routes*/}
         </Route>
       </Routes>

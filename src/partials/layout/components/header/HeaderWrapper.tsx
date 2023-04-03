@@ -73,7 +73,7 @@ export function HeaderWrapper() {
         )}
 
         {/* begin::Wrapper */}
-        <div className="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+        <div className="d-flex align-items-stretch justify-content-end flex-lg-grow-1">
           {header.left === "page-title" && (
             <div className="d-flex align-items-center" id="kt_header_nav">
               <DefaultTitle />

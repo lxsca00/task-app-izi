@@ -1,8 +1,29 @@
 import React from "react";
 import { KTSVG } from "../../../helpers/KTSVG";
-import { ITicket } from '../core/TableModels';
 
-const TableRow = ({code, ruc, activities, enterDate, modifyDate, intState, lifecycle, state, owner} : ITicket) => {
+type Props = {
+  code: number;
+  ruc: number;
+  activities: number;
+  enterDate: string;
+  modifyDate: string;
+  intState: string;
+  lifecycle: number;
+  state: "open" | "closed";
+  owner: string;
+};
+
+const TableRow = ({
+  code,
+  ruc,
+  activities,
+  enterDate,
+  modifyDate,
+  intState,
+  lifecycle,
+  state,
+  owner,
+}: Props) => {
   return (
     <tr>
       <td>
@@ -12,14 +33,10 @@ const TableRow = ({code, ruc, activities, enterDate, modifyDate, intState, lifec
         <p className="text-dark mb-1 fs-6 text-center">{ruc}</p>
       </td>
       <td>
-        <p className="text-dark mb-1 fs-6 text-center">
-         {activities}
-        </p>
+        <p className="text-dark mb-1 fs-6 text-center">{activities}</p>
       </td>
       <td>
-        <p className="text-dark mb-1 fs-6 text-center">
-          {enterDate}
-        </p>
+        <p className="text-dark mb-1 fs-6 text-center">{enterDate}</p>
       </td>
       <td className="text-dark mb-1 fs-6 text-center">{modifyDate}</td>
       <td className="text-dark mb-1 fs-6 text-center">

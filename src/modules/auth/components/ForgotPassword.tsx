@@ -52,33 +52,32 @@ export function ForgotPassword() {
       >
         <div className='text-center mb-10'>
           {/* begin::Title */}
-          <h1 className='text-dark mb-3'>Forgot Password ?</h1>
+          <h1 className='text-dark mb-3'>¿Olvidaste tu contraseña?</h1>
           {/* end::Title */}
 
           {/* begin::Link */}
-          <div className='text-gray-400 fw-bold fs-4'>Enter your email to reset your password.</div>
+          <div className='text-gray-400 fw-bold fs-4'>Ingrese su correo electrónico para restablecer su contraseña.</div>
           {/* end::Link */}
         </div>
 
         {/* begin::Title */}
         {hasErrors === true && (
           <div className='mb-lg-15 alert alert-danger'>
-            <div className='alert-text font-weight-bold'>
-              Sorry, looks like there are some errors detected, please try again.
+            <div className='alert-text font-weight-bold'>Lo sentimos, se han detectado algunos errores, por favor vuelve a intentarlo.
             </div>
           </div>
         )}
 
         {hasErrors === false && (
           <div className='mb-10 bg-light-info p-8 rounded'>
-            <div className='text-info'>Sent password reset. Please check your email</div>
+            <div className='text-info'>Contraseña restablecida. Revise su correo electrónico.</div>
           </div>
         )}
         {/* end::Title */}
 
         {/* begin::Form group */}
         <div className='fv-row mb-10'>
-          <label className='form-label fw-bolder text-gray-900 fs-6'>Email</label>
+          <label className='form-label fw-bolder text-gray-900 fs-6'>Correo electrónico</label>
           <input
             type='email'
             placeholder=''
@@ -109,7 +108,7 @@ export function ForgotPassword() {
             id='kt_password_reset_submit'
             className='btn btn-lg btn-primary fw-bolder me-4'
           >
-            <span className='indicator-label'>Submit</span>
+            <span className='indicator-label'>Continuar</span>
             {loading && (
               <span className='indicator-progress'>
                 Please wait...
@@ -124,7 +123,7 @@ export function ForgotPassword() {
               className='btn btn-lg btn-light-primary fw-bolder'
               disabled={formik.isSubmitting || !formik.isValid}
             >
-              Cancel
+              Cancelar
             </button>
           </Link>{' '}
         </div>

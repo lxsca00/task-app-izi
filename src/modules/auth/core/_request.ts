@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {AuthModel, UserModel} from './_models'
 
-const API_URL = process.env.REACT_APP_API_URL
+const API_URL = "https://preview.keenthemes.com/metronic8/laravel/api" //process.env.REACT_APP_API_URL
 
 export const GET_USER_BY_ACCESSTOKEN_URL = `${API_URL}/verify_token`
 export const LOGIN_URL = `${API_URL}/login`
@@ -23,7 +23,10 @@ export function requestPassword(email: string) {
 }
 
 export function getUserByToken(token: string) {
-  return axios.post<UserModel>(GET_USER_BY_ACCESSTOKEN_URL, {
+  const response = axios.post<UserModel>(GET_USER_BY_ACCESSTOKEN_URL, {
     api_token: token,
   })
+  console.log(response);
+  
+  return response
 }

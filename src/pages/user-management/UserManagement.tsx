@@ -1,10 +1,9 @@
-import { FC } from "react";
 import { PageHeader } from "../../partials/components/page-header/PageHeader";
 import { Table } from "../../partials/components/tables/Table";
 import { UsersTableHead } from "../../partials/components/tables/table-head/UsersTableHead";
 
 
-const UserManagement: FC = () => (
+const UserManagement = (): JSX.Element => (
   <>
     <PageHeader />
     <p>UserManagement component works!</p>

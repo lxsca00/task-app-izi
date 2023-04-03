@@ -1,5 +1,3 @@
-import { FC } from "react"
-
-const DashboardBusiness: FC = () => <p>DashboardBusiness component works!</p>
+const DashboardBusiness = (): JSX.Element => <p>DashboardBusiness component works!</p>
 
 export {DashboardBusiness}

@@ -13,7 +13,6 @@ const App = () => {
           <MasterInit />
         </AuthInit>
       </LayoutProvider>
-
     </Suspense>
   );
 };
