@@ -30,7 +30,7 @@ const tickets: Array<ITicket> = [
 
 const TasksBusiness = (): JSX.Element => (
   <>
-    <button type="submit" onClick={() => console.log("Excel to JSON button")}>
+    <button className="btn btn-sm btn-primary cursor-pointer" type="submit" onClick={() => console.log("Excel to JSON button")}>
       Excel a JSON
     </button>
     {/*<Table name="Masivo" className="mb-5 mb-xl-8">
