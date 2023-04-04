@@ -13,13 +13,13 @@ const Error500: FC = () => {
           {/*begin::Wrapper*/}
           <div className='pt-lg-10 mb-10'>
             {/*begin::Logo*/}
-            <h1 className='fw-bolder fs-2qx text-gray-800 mb-10'>System Error</h1>
+            <h1 className='fw-bolder fs-2qx text-gray-800 mb-10'>Error de sistema</h1>
             {/*end::Logo*/}
             {/*begin::Message*/}
             <div className='fw-bold fs-3 text-muted mb-15'>
-              Something went wrong!
+              ¡Algo salió mal!
               <br />
-              Please try again later.
+              Por favor intenta de nuevo más tarde.
             </div>
             {/*end::Message*/}
             {/*begin::Action*/}

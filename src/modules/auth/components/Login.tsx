@@ -30,8 +30,9 @@ const Login = () => {
       try {
         const { data: auth } = await login(values.email, values.password);
         saveAuth(auth);
-        const { data: user } = await getUserByToken(auth.api_token);
+        const { data: user } = await getUserByToken(auth.token);
         setCurrentUser(user);
+        console.log(user)
       } catch (error) {
         saveAuth(undefined);
         setStatus("Ta mal");
@@ -111,7 +112,7 @@ const Login = () => {
         {!loading && <span className="indicator-label">Continuar</span>}
         {loading && (
           <span className="indicator-progress" style={{ display: "block" }}>
-            Please wait...
+            Por favor espera...
             <span className="spinner-border spinner-border-sm align-middle ms-2"></span>
           </span>
         )}

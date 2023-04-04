@@ -10,36 +10,36 @@ export function AsideMenuMain() {
   return (
     <>
       <AsideMenuItemWithSub
-        to="/app/tasks"
+        to="/tasks"
         icon="/media/icons/duotune/art/art002.svg"
         title="Tickets"
         fontIcon="bi-app-indicator"
       >
-        <AsideMenuItem to="/app/tasks/business" title="Negocio" hasBullet={true} />
-        <AsideMenuItem to="/app/tasks/ggee" title="GGEE" hasBullet={true} />
+        <AsideMenuItem to="/tasks/business" title="Negocio" hasBullet={true} />
+        <AsideMenuItem to="/tasks/ggee" title="GGEE" hasBullet={true} />
       </AsideMenuItemWithSub>
       <AsideMenuItem
-        to="/app/mailbox"
+        to="/mailbox"
         icon="/media/icons/duotune/general/gen019.svg"
         title="Buzón"
         fontIcon="bi-layers"
       />
       <AsideMenuItemWithSub
-        to="/app/dashboard"
+        to="/dashboard"
         title="Reportes"
         fontIcon="bi-archive"
         icon="/media/icons/duotune/general/gen022.svg"
       >
         <AsideMenuItem
-          to="/app/dashboard/business"
+          to="/dashboard/business"
           title="Negocio"
           hasBullet={true}
         />
-        <AsideMenuItem to="/app/dashboard/ggee" title="GGEE" hasBullet={true} />
+        <AsideMenuItem to="/dashboard/ggee" title="GGEE" hasBullet={true} />
       </AsideMenuItemWithSub>
 
       <AsideMenuItem
-        to="/app/user-management"
+        to="/users"
         icon="/media/icons/duotune/general/gen051.svg"
         title="User management"
         fontIcon="bi-layers"

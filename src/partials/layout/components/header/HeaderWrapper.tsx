@@ -1,8 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import clsx from "clsx";
-import React from "react";
-import { Link } from "react-router-dom";
-import { toAbsoluteUrl } from "../../../../helpers/AssetHelpers";
 import { KTSVG } from "../../../../helpers/KTSVG";
 import { useLayout } from "../../core/LayoutProvider";
 import { DefaultTitle } from "./page-title/DefaultTitle";
@@ -25,7 +22,7 @@ export function HeaderWrapper() {
       <div
         className={clsx(
           classes.headerContainer.join(" "),
-          "d-flex align-items-stretch justify-content-start"
+          "d-flex align-items-stretch justify-content-between"
         )}
       >
         {/* begin::Aside mobile toggle */}
@@ -46,31 +43,6 @@ export function HeaderWrapper() {
           </div>
         )}
         {/* end::Aside mobile toggle */}
-        {/* begin::Logo */}
-        {!aside.display && (
-          <div className="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-            <Link to="/dashboard" className="d-lg-none">
-              <img
-                alt="Logo"
-                src={toAbsoluteUrl("/media/logos/default-small.svg")}
-                className="h-30px"
-              />
-            </Link>
-          </div>
-        )}
-        {/* end::Logo */}
-
-        {aside.display && (
-          <div className="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-            <Link to="/" className="d-lg-none">
-              <img
-                alt="Logo"
-                src={toAbsoluteUrl("/media/logos/default-small.svg")}
-                className="h-30px"
-              />
-            </Link>
-          </div>
-        )}
 
         {/* begin::Wrapper */}
         <div className="d-flex align-items-stretch justify-content-end flex-lg-grow-1">

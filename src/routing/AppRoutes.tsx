@@ -14,24 +14,20 @@ const AppRoutes = () => {
   return (
     <BrowserRouter basename={PUBLIC_URL}>
       <Routes>
-        <Route element={<App />}>
-          <Route path="error/*" element={<ErrorsPage />} />
-          <Route path="logout" element={<Logout />} />
-          {/*TODO: currentUser validation*/}
+        <Route element={<App/>}>
+          <Route path="error/*" element={<ErrorsPage/>}/>
+          <Route path="logout" element={<Logout/>}/>
           {currentUser ? (
             <>
-              <Route path="/*" element={<PrivateRoutes />} />
-              <Route index element={<Navigate to="/app" />} />
+            <Route path="/*" element={<PrivateRoutes/>}/>
+            <Route index element={<Navigate to="/tasks"/>}/>
             </>
           ) : (
             <>
-              <Route path="auth/*" element={<AuthPage />} />
-              <Route path="*" element={<Navigate to="/auth" />} />
+            <Route path="auth/*" element={<AuthPage/>}/>
+            <Route path="*" element={<Navigate to="/auth"/>}/>
             </>
           )}
-          <Route index path="auth/*" element={<AuthPage/>}/>
-          <Route path="app/*" element={<PrivateRoutes/>}/>
-          {/*TODO: Private routes*/}
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,19 +1,12 @@
-export interface AuthModel {
-  api_token: string;
-  refreshToken?: string;
-}
-
 export interface UserModel {
-  id: number;
-  username: string;
-  password: string | undefined;
+  id: string;
   email: string;
+  username: string;
   first_name: string;
   last_name: string;
-  fullname?: string;
-  occupation?: string;
-  phone?: string;
-  roles?: Array<number>;
-  //pic?: string;
-  auth?: AuthModel;
+}
+
+export interface AuthModel {
+  token: string;
+  user: UserModel;
 }

@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { HeaderWrapper } from "./components/header/HeaderWrapper";
 import { ScrollTop } from "./components/ScrollTop";
 import { PageDataProvider } from "./core/PageData";
+import { Toolbar } from "./components/toolbar/Toolbar";
 
 const MasterLayout = () => {
   return (
@@ -21,6 +22,7 @@ const MasterLayout = () => {
             id="kt_content"
             className="content d-flex flex-column flex-column-fluid"
           >
+            <Toolbar/>
             <div className="post d-flex flex-column-fluid" id="kt_post">
               <Content>
                 <Outlet />

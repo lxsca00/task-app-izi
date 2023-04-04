@@ -43,6 +43,10 @@
 			transition: left get($aside-config, transition-speed) ease;
 		}
 
+		// Header menu
+		.header-menu {
+			display: flex;
+		}
 	}
 }
 
@@ -72,6 +76,12 @@
 		// Fixed header and fixed toolbar modes
 		.header-tablet-and-mobile-fixed.toolbar-tablet-and-mobile-fixed & {
 			box-shadow: none;
+		}
+
+		// Header menu
+		.header-menu {
+			display: none;
+			z-index: get($header-config, fixed, z-index) - 1;
 		}
 
 		// Page title
